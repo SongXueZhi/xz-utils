@@ -1,4 +1,4 @@
-package com.xz;
+package com.xz.analysis;
 
 import com.github.javaparser.ast.CompilationUnit;
 import spoon.Launcher;

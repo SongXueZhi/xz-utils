@@ -11,6 +11,7 @@
     <modules>
         <module>instrumentator</module>
         <module>static-analysis</module>
+        <module>examples</module>
     </modules>
 
 </project>

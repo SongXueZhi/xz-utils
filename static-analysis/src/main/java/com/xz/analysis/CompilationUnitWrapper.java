@@ -1,8 +1,7 @@
-package com.xz;
+package com.xz.analysis;
 
 import com.github.javaparser.ast.CompilationUnit;
 import spoon.Launcher;
-import spoon.reflect.CtModel;
 
 import java.util.Optional;
 
