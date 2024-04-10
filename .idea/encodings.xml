@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/instrumentator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/instrumentator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static-analysis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static-analysis/src/main/resources" charset="UTF-8" />
   </component>
 </project>
