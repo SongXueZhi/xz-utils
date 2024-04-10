@@ -6,7 +6,7 @@ I have chosen [byte-buddy](https://github.com/raphw/byte-buddy) & [ASM](https://
 
 While alternatives such as [BCEL](https://github.com/apache/commons-bcel.git) exist for dynamic analysis, I maintain my current choice due to its ease of use and community support.
 
-[JavaParser](https://github.com/javaparser/javaparser) is equally popular for static analysis, and **xz-utils** currently reserves a slot for it, possibly intending to enhance JavaParser's interface in the future. However, I prefer Spoon for its retrieval and templating mechanisms, which I believe are better suited for complex application scenarios.
+[JavaParser](https://github.com/javaparser/javaparser) is equally popular for static analysis, and **xz-utils** currently reserves a slot for it, possibly intending to enhance JavaParser's interface in the future. However, I prefer Spoon for its retrieval and templating mechanisms, which I believe are better suited for complex project scenarios.
 
 
 ## Features
