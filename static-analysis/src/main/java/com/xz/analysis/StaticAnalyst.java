@@ -1,4 +1,5 @@
 package com.xz.analysis;
+import fr.inria.controlflow.ControlFlowGraph;
 import org.jgrapht.Graph;
 import org.jgrapht.graph.DefaultEdge;
 public class StaticAnalyst {
@@ -42,6 +43,11 @@ public class StaticAnalyst {
         return null;
     }
 
+    public ControlFlowGraph buildControlFlowGraphFrom(AnalyzedModel model, String className, String methodName) {
+        if (constructor instanceof SpoonConstructor)
+            return ((SpoonConstructor)constructor).buildControlFlowGraph((LauncherWrapper) model, className, methodName);
+        return null;
+    }
     public  int checkReachabilityAndDistance(Graph<String, ?> graph, String method1, String method2) {
         return constructor.checkReachabilityAndDistance(graph, method1, method2);
     }

@@ -1,4 +1,6 @@
 package com.xz.analysis;
+import fr.inria.controlflow.ControlFlowBuilder;
+import fr.inria.controlflow.ControlFlowGraph;
 import org.jgrapht.Graph;
 import org.jgrapht.GraphPath;
 import org.jgrapht.alg.shortestpath.BFSShortestPath;
@@ -84,6 +86,15 @@ public class SpoonConstructor implements Constructor<LauncherWrapper> {
             }
         }
         return  graph;
+    }
+
+    public ControlFlowGraph buildControlFlowGraph(LauncherWrapper launcherWrapper, String className, String methodName) {
+        Launcher launcher = launcherWrapper.asLauncher().orElseThrow(() -> new IllegalArgumentException("wrapper is not a spoon launcher"));
+        ControlFlowBuilder builder = new ControlFlowBuilder();
+        CtClass<?> clazz = launcher.getFactory().Class().get(className);
+        CtMethod<?> testMethod = clazz.getMethodsByName(methodName).get(0);
+
+        return builder.build(testMethod);
     }
 
     @Override

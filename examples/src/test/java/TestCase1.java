@@ -25,7 +25,13 @@ public class TestCase1 {
             return fibonacci(n - 1) + fibonacci(n - 2);
         }
     }
-
+    public int getN(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return n+2;
+        }
+    }
     /**
      * Adds two numbers.
      * @param a First number.
