@@ -113,4 +113,33 @@ checkout successful:/Users/sxz/reg4j/cache_code/1_ric
 test command:com.alibaba.json.bvt.parser.deser.list.ListFieldTest#test_for_list
 ```
 
+## ControlFlow Graph
+The feature is implemented in ``static-analysis`` module. Code for using example is as follows:
+```java
+StaticAnalyst staticAnalyst = new StaticAnalyst(StaticAnalyst.Core.SPOON);
+staticAnalyst.setLanguageLevel(11);
+ControlFlowGraph graph  = staticAnalyst.buildControlFlowGraphFrom(
+        staticAnalyst.createModel("examples/src/test/java"),
+        "TestCase1",
+        "getN"
+);
+graph.simplify();
+System.out.println(graph.toGraphVisText());
+```
+then you can get the output as follows:
+```bash
+digraph null { 
+node [fontsize = 8];
+1 [shape=Mdiamond, label="BEGIN_2 "];
+2 [shape=diamond, label="4 - n <= 1 "];
+3 [shape=rectangle, label="7 - return n "];
+4 [shape=doublecircle, label="EXIT_1 "];
+5 [shape=rectangle, label="10 - return n + 2 "];
+3 -> 4 ;
+ 5 -> 4 ;
+ 1 -> 2 ;
+ 2 -> 3 ;
+ 2 -> 5 ;
+ }
+```
 You can get more exmples in ``examples`` module.

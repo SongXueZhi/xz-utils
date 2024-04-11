@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddcf27a-a534-456b-9c87-043e27054a8a" name="Changes" comment="update README.md">
-      <change afterPath="$PROJECT_DIR$/examples/src/main/java/com/xz/examples/ControlFlowExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spoon-control-flow-0.0.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="0ddcf27a-a534-456b-9c87-043e27054a8a" name="Changes" comment="add control-flow part">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/examples/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/src/test/java/TestCase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/test/java/TestCase1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static-analysis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/static-analysis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static-analysis/src/main/java/com/xz/analysis/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/static-analysis/src/main/java/com/xz/analysis/Constructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static-analysis/src/main/java/com/xz/analysis/SpoonConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/static-analysis/src/main/java/com/xz/analysis/SpoonConstructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static-analysis/src/main/java/com/xz/analysis/StaticAnalyst.java" beforeDir="false" afterPath="$PROJECT_DIR$/static-analysis/src/main/java/com/xz/analysis/StaticAnalyst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/main/java/com/xz/examples/ControlFlowExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/main/java/com/xz/examples/ControlFlowExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712755356710</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add control-flow part">
+      <option name="closed" value="true" />
+      <created>1712840084829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712840084829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +197,8 @@
     <MESSAGE value="add spoon and java parser" />
     <MESSAGE value="add call graph feature &amp; examples" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="add control-flow part" />
+    <option name="LAST_COMMIT_MESSAGE" value="add control-flow part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -215,7 +215,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/examples/src/main/java/com/xz/examples/ControlFlowExample.java</url>
-          <line>14</line>
+          <line>17</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
